@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Clashroyale';
+  src: url(./Clash-Royale-Font/You\ Blockhead.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ClashRoyale';
+    scrollbar-color: #666 #201c29;
+    color: #fff;
+    font-size: 16px;
+  }
+  p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+  }
+    body,header,main{
+    background: #1b1b1b;
+    font-family: monospace;
+    }
+    .container{
+      margin-top:50pt ;
+
+    }
+    .container,.container-content{
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .container-content{
+      position:relative;
+    }
+    
+    .container-content form{
+     
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .container-content section{
+      text-align: center;
+      font-size: 4pt ;
+      cursor: pointer;
+      max-width: 50px;
+      align-items: center;
+      justify-content: center;
+      display: grid;
+      margin: 0 auto;
+      z-index: 1;
+    }
+    .container-content section img{
+      max-width:100%;
+      border-radius: 5%;
+    }
+    .container-content-emulator{
+      max-width: 100%;
+    }
+    .container-content-emulator video{
+     /* border: 1px solid white;  */
+     height: 350px;
+     /* width: 180px; */
+      border-radius: 5%;
+      opacity: 0;
+    }
+    .blue{
+      transform: scale(0.98);
+    }

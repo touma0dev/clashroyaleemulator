@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Clash Royale On Web</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css-loader.css">  
+</head>
+<body>
+<div class="container">
+  <div class="container-content">
+
+    <form action="icon">
+      <section id="icon" >
+
+        Clash Royale
+        <img src="/icon.jpg" alt="">
+      </section>
+      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </form>
+    <div class="container-content-emulator">
+      <video id="video" src="./emulator.mp4"></video>
+    </div>
+  </div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#icon").click(function() {
+      $(this).css("display", 'none');;
+      $(".lds-ring").css("opacity", 1);
+      setTimeout(function() {
+        $(".lds-ring").css("opacity", 0);
+        $("video").css("opacity", 1);
+
+        $("video")[0].play(); 
+      }, 2000);      
+    });
+
+    $("#icon img").mouseleave(function() {
+      $(this).removeClass("blue");
+    });
+  });
+</script>
+</body>
+</html>
